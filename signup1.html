@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Hind', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .side img {
+            width: 50%;
+            max-width: 50%;
+
+        }
+
+        .login-container {
+            max-width: 450px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        .title {
+            text-transform: uppercase;
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .seprator {
+            width: 150px;
+            height: 3px;
+            background-color: greenyellow;
+            margin: 25px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+        .sing-up-message {
+            margin-top: 20px;
+        }
+
+        .login-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .form-control {
+            width: 100%;
+            position: relative;
+            margin-bottom: 24px;
+        }
+
+        input,
+        button {
+            border: none;
+            outline: none;
+
+            border-radius: 30px;
+            font-size: 1em;
+        }
+
+        input {
+            width: 100%;
+            background-color: #a6a6a6;
+            letter-spacing: 0.5px;
+            padding: 14px 64px;
+        }
+
+       
+
+      
+
+        button.submit {
+            color: #fff;
+            padding: 14px 64px;
+            margin: 32px auto;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            background-color: rgb(33, 199, 33);
+            cursor: pointer;
+            transition: opacity 0.4s;
+
+        }
+
+        button.submit {
+            opacity: 0.9;
+        }
+
+        hr {
+            border: 2px solid greenyellow;
+        }
+
+        .sign-up-button {
+            margin-top: 10px;
+            color: #fff;
+            padding: 14px 30px;
+            margin: 5px auto;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            background-color: rgb(33, 199, 33);
+            cursor: pointer;
+            transition: opacity 0.4s;
+
+        }
+
+        .sign-up-message {
+            margin-top: 20px;
+        }
+
+        @media(max-width:780px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .side {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="side">
+        <img src="images/undraw_electric_car_b-7-hl.svg" alt="">
+    </section>
+    <section class="main">
+        <div class="login-container">
+            <p class="title">Sign Up</p>
+
+            <div class="separator">
+                <hr>
+            </div>
+            <p class="welcome-message"> Welcome to the future of EV   </p>
+
+            <form action="#" class="login-form">
+                <div class="form-control">
+                    <input type="name" class="form-control" placeholder="Name">
+                    
+                </div>
+
+
+                <div class="form-control">
+                    <input type="email" class="form-control" placeholder="Email">
+                    
+                </div>
+
+
+
+
+                <div class="form-control">
+                    <input type="text " class="form-control" placeholder="Car Model">
+                    
+                </div>
+
+
+                <div class="form-control">
+                    <input type="text" class="form-control" placeholder="RTO registration number">
+                    
+                </div>
+
+
+                <div class="form-control">
+                    <input type="password" class="form-control" placeholder="Password">
+                    
+                </div>
+                <button class="submit">sign-up</button>
+                <hr>
+            </form>
+
+        </div>
+    </section>
+</body>
+
+</html>
