@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>HOME</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Hind', sans-serif;
+        }
+
+        nav {
+            height: 80px;
+            background: rgb(33, 199, 33);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 50px 0px 20px;
+        }
+
+        .logo {
+            font-size: 33px;
+            color: white;
+            
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+             padding: 8px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: white;
+        }
+
+        li {
+            margin: 0px 5px;
+
+        }
+
+        nav .menu-btn i {
+            font-size: 22px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #click {
+
+            display: none;
+
+        }
+        .home-heading{
+            font-weight: bold;
+            text-align: center;
+            font-size: xx-large;
+            margin-top: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        @media(max-width:780px) {
+            nav ul {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                background: rgb(33, 199, 33);
+                height: 100vh;
+                width: 100%;
+                display: block;
+                text-align: center;
+                transition: all 0.3s ease;
+            }
+
+            #click:checked~.menu-btn i::before {
+                content: "\f00d"
+            }
+
+            nav .menu-btn i {
+                display: block;
+            }
+
+            nav ul li {
+                margin: 40px 0;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+                display: block;
+            }
+
+            nav ul li a:hover,
+            nav ul li a.active {
+                background-color: rgb(33, 199, 33);
+                color: white;
+
+
+            }
+
+            #click:checked~ul {
+                left: 0%;
+
+
+            }
+
+            .logo {
+
+                
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="" alt=""> Chargeit</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+            <li><a href="" class="active"> HOME</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Scan</a></li>
+            <li><a href="">locate us</a></li>
+            <li><a href="">About us</a></li>
+
+        </ul>
+    </nav>
+<h1 class="home-heading">
+    Steps to use our services
+</h1>
+<div class="container">
+    <div class="step1">
+        <p class="step-heading">
+            1.Locate a chargeit station.
+        </p>
+        <p class="step-discription">
+            Follow the nearest charging station that's been displayed in the Locate us page.
+        </p>
+        <video src=""></video>
+    </div>
+
+
+    <div class="step2">
+        <p class="step-heading">
+            2.Buy units
+        </p>
+        <p class="step-discription">
+            After reaching our station park your ev near to a charging box and your and your charging socket facing the charging box.
+            Buy some units from our website for buying units click thne buy units button and choose from the packs or by custom units.
+        </p>
+        <video src=""></video>
+    </div>
+
+
+    <div class="step3">
+        <p class="step-heading">
+            3.Scan
+        </p>
+        <p class="step-discription">
+            Scan the barcode on the charging box with the scan button provided on the website.If you have suficient units you would get a option of open the box.
+            When you click open box button the box would automatically open the door .
+                </p>
+        <video src=""></video>
+    </div>
+
+
+    <div class="step4">
+        <p class="step-heading">
+            4.Plugin
+        </p>
+        <p class="step-discription">
+        Once the door is open you can take the charging cable and plug it in your ev charging socket.
+        </p>
+        <video src=""></video>
+    </div>
+</div>
+
+</body>
+
+</html>
