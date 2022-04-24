@@ -18,7 +18,10 @@
 
         nav {
             height: 80px;
-            background: rgb(33, 199, 33);
+
+            background: -webkit-linear-gradient(90deg, rgb(20, 90, 61), rgb(61, 151, 25));
+            background: linear-gradient(90deg, rgb(20, 90, 61), rgb(61, 151, 25));
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -28,7 +31,7 @@
         .logo {
             font-size: 33px;
             color: white;
-            
+
         }
 
         nav ul {
@@ -43,7 +46,7 @@
             font-size: 18px;
             font-weight: 500;
             letter-spacing: 1px;
-             padding: 8px 10px;
+            padding: 8px 10px;
             border-radius: 5px;
             transition: all 0.3s ease;
         }
@@ -69,12 +72,64 @@
             display: none;
 
         }
-        .home-heading{
+
+        .home-heading {
             font-weight: bold;
             text-align: center;
             font-size: xx-large;
             margin-top: 30px;
             letter-spacing: 0.5px;
+        }
+
+        .step {
+            margin-left: 20px;
+            margin-top: 25px;
+        }
+
+        .step-heading {
+            font-weight: bold;
+            font-size: large;
+            letter-spacing: 1px;
+            max-width: 50%;
+
+
+
+        }
+
+        .step-discription {
+            max-width: 50%;
+            vertical-align: center;
+            margin-top: 20px;
+
+
+
+        }
+
+        hr {
+
+            width: 100px;
+            margin: auto;
+            border-color: green;
+        }
+
+        .hero {
+            height: 500px;
+
+            background: -webkit-linear-gradient(90deg, rgb(61, 151, 25), rgb(20, 90, 61));
+            background: linear-gradient(90deg, rgb(61, 151, 25), rgb(20, 90, 61));
+
+
+
+        }
+
+        .hero-text {
+            vertical-align: center;
+            text-align: center;
+            padding-top: 250px;
+            font-size: xx-large;
+            font-weight: bolder;
+            letter-spacing: 1px;
+
         }
 
         @media(max-width:780px) {
@@ -121,10 +176,7 @@
 
             }
 
-            .logo {
-
-                
-            }
+            .logo {}
         }
     </style>
 
@@ -147,55 +199,76 @@
 
         </ul>
     </nav>
-<h1 class="home-heading">
-    Steps to use our services
-</h1>
-<div class="container">
-    <div class="step1">
-        <p class="step-heading">
-            1.Locate a chargeit station.
-        </p>
-        <p class="step-discription">
-            Follow the nearest charging station that's been displayed in the Locate us page.
-        </p>
-        <video src=""></video>
+    <div class="hero">
+        <p class="hero-text">Travel far with your Ev Chargeit has your back.</p>
+
     </div>
+    <h1 class="home-heading">
+        Steps to use our services
+    </h1>
+    <hr>
+
+    <div class="container">
+        <div class="step">
+            <p class="step-heading">
+                1.Locate a chargeit station.
+            </p>
+            <p class="step-discription">
+                Follow the nearest charging station that's been displayed in the Locate us page.
+            </p>
+            <video src=""></video>
+        </div>
 
 
-    <div class="step2">
-        <p class="step-heading">
-            2.Buy units
-        </p>
-        <p class="step-discription">
-            After reaching our station park your ev near to a charging box and your and your charging socket facing the charging box.
-            Buy some units from our website for buying units click thne buy units button and choose from the packs or by custom units.
-        </p>
-        <video src=""></video>
+        <div class="step">
+            <p class="step-heading">
+                2.Buy units
+            </p>
+            <p class="step-discription">
+                After reaching our station park your ev near to a charging box and your and your charging socket facing
+                the charging box.
+                Buy some units from our website for buying units click thne buy units button and choose from the packs
+                or by custom units.
+            </p>
+            <video src=""></video>
+        </div>
+
+
+        <div class="step">
+            <p class="step-heading">
+                3.Scan
+            </p>
+            <p class="step-discription">
+                Scan the barcode on the charging box with the scan button provided on the website.If you have suficient
+                units you would get a option of open the box.
+                When you click open box button the box would automatically open the door .
+            </p>
+            <video src=""></video>
+        </div>
+
+
+        <div class="step">
+            <p class="step-heading">
+                4.Plugin
+            </p>
+            <p class="step-discription">
+                Once the door is open you can take the charging cable and plug it in your ev charging socket.
+            </p>
+            <video src=""></video>
+        </div>
+
+        <div class="step">
+            <p class="step-heading">
+                5.Close door
+            </p>
+            <p class="step-discription">
+                Once you have the refill of energy in your ev you just need to select the close door option on your
+                screen and make sure that the cable is kept as it was when you opened the door and see if the door is
+                locked.
+            </p>
+            <video src=""></video>
+        </div>
     </div>
-
-
-    <div class="step3">
-        <p class="step-heading">
-            3.Scan
-        </p>
-        <p class="step-discription">
-            Scan the barcode on the charging box with the scan button provided on the website.If you have suficient units you would get a option of open the box.
-            When you click open box button the box would automatically open the door .
-                </p>
-        <video src=""></video>
-    </div>
-
-
-    <div class="step4">
-        <p class="step-heading">
-            4.Plugin
-        </p>
-        <p class="step-discription">
-        Once the door is open you can take the charging cable and plug it in your ev charging socket.
-        </p>
-        <video src=""></video>
-    </div>
-</div>
 
 </body>
 
